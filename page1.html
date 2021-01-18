@@ -33,17 +33,25 @@
                 <img src="img/Cover_Mock.png" class="bookimg">
             </div>
             <div class="col-md-7 col2">
-                <form class="form">
-                    <div class="mb-3">
-                        <label class="form-label" style="font-weight: bold;">Email address:</label>
-                        <input type="email" class="form-control" required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label" style="font-weight: bold;">Name:</label>
-                        <input type="text" class="form-control" required>
-                    </div>
-                    <button type="submit" class="btn">Get Access</button>
+                <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" class="form" method="post">
+                    <!-- Name -->
+                    <label class="form-label" style="font-weight: bold;">Name:</label>
+                    <input type="text" class="form-control" name="name" />
+                    <!-- Email field (required) -->
+                    <label class="form-label" style="font-weight: bold;">Email address:</label>
+                    <input type="text" class="form-control" name="email" />
+                    <!-- List token -->
+                    <!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
+                    <input type="hidden" name="campaign_token" value="onxKc" />
+                    <!-- Thank you page (optional) -->
+                    <input type="hidden" name="thankyou_url" value="https://psychtiq.com/page2.html" />
+                    <!-- Add subscriber to the follow-up sequence with a specified day (optional) -->
+                    <input type="hidden" name="start_day" value="0" />
+                    <!-- Subscriber button -->
+                    <input type="submit" value="Get Access" class=" getaccess" />
                 </form>
+
+
             </div>
         </div>
     </main>
