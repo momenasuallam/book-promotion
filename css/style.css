@@ -85,20 +85,19 @@ main h4 {
 }
 
 .p3d {
-    background-color: #6c757d9e;
     text-align: center;
-    padding: 10px;
     margin: 20px 0;
+    text-decoration: none;
 }
 
 .p3d h6 {
-    font-size: 20px;
+    font-size: 23px;
     color: #fff;
     font-weight: bold;
 }
 
 .p3d p {
-    font-size: 14px;
+    font-size: 18px;
     color: #fff;
     font-weight: bold;
 }
@@ -117,7 +116,7 @@ main h4 {
         padding: 20px;
     }
     .bookimg {
-        width: 80%;
+        width: 65%;
         text-align: center;
         display: table;
         margin: auto;
@@ -138,6 +137,12 @@ main h4 {
     }
 }
 
+@media(max-width: 768px) {
+    body {
+        background-size: 100% 100%;
+    }
+}
+
 @media(max-width: 600px) {
     main h1 {
         font-size: 20px;
@@ -147,5 +152,11 @@ main h4 {
     }
     .p3img {
         width: 60%;
+    }
+    .p3d h6 {
+        font-size: 20px;
+    }
+    .p3d p {
+        font-size: 16px;
     }
 }
